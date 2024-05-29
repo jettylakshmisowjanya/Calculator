@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calci</title>
+        <link rel="stylesheet" href="calculator.css">
+    </head>
+    <body>
+        <div class="bg">
+            <div>
+                <input class="jsdis" style="
+                width: 288px;
+                height: 50px;
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid white;
+                color: white;
+                font-size: 50px;
+                text-align: right;
+                margin: 8px 4px;
+                " type="text" maxlength="20">
+            </div>
+            <div>
+            <button onclick="
+            update('1'); 
+            dical();
+            console.log(calculation);   
+            ">1</button>
+            <button onclick="
+            update('2');
+            dical();
+            console.log(calculation);"
+            >2</button>
+            <button onclick="
+            update('3');
+            dical();
+            console.log(calculation);">3</button>
+            <button onclick="
+            update(' + ');
+            dical();
+            console.log(calculation);" class="org">+</button>
+            </div>
+            <div>
+            <button onclick="
+            update('4');
+            dical();
+            console.log(calculation);">4</button>
+            <button onclick="
+            update('5');
+            dical();
+            console.log(calculation);">5</button>
+            <button onclick="
+            update('6');
+            dical();
+            console.log(calculation);">6</button>
+            <button onclick="
+            update(' - ');
+            dical();
+            console.log(calculation);" class="org">-</button>
+            </div>
+            <div>
+            <button onclick="
+            update('7');
+            dical();
+            console.log(calculation);">7</button>
+            <button onclick="
+            update('8');
+            dical();
+            console.log(calculation);">8</button>
+            <button onclick="
+            update('9');
+            dical();
+            console.log(calculation);">9</button>
+            <button onclick="
+            update(' * ');
+            dical();
+            console.log(calculation);" class="org">*</button>
+            </div>
+            <div>
+            <button onclick="
+            update('0');
+            dical();
+            console.log(calculation);">0</button>
+            <button onclick="
+            update('.');
+            dical();
+            console.log(calculation);">.</button>
+            <button onclick="
+            calculation = eval(calculation);
+            console.log(calculation);
+            dical();
+            ">=</button>
+            <button onclick="
+            update(' / ');
+            dical();
+            console.log(calculation);" class="org">/</button>
+            </div>
+            <button onclick="
+            calculation = '';
+            dical();
+            console.log(calculation);
+            " style="
+            font-size: 16px;
+            ">Clear</button>
+        </div>
+        <script>
+            let calculation ='';
+            function dical(){
+                document.querySelector('.jsdis').value = calculation;
+            }
+            function update(value){
+                calculation += value;
+            }
+          
+        </script>
+    </body>
+</html>

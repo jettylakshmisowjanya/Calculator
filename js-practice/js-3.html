@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>coin_flip</title>
+    </head>
+    <body>
+        <button onclick="
+        flip('head');" class="head">head</button>
+        <button onclick="
+        flip('tail');" class="tail">tail</button>
+        <p class="op1"></p>
+        <p class="op2"></p>
+        <p class="op3"></dipv>
+        <script>
+            let wins = 0, losses = 0;
+            let score;
+            function flip(your_choice){
+                let flip = Math.random() <= 0.5 ? 'head' : 'tail';
+                document.querySelector('.op1').innerHTML = `your-guess - ${your_choice}: ${flip} - result`;
+                result(your_choice,flip);
+                score = document.querySelector('.op3').innerHTML = `wins : ${wins} , losses : ${losses}`;
+            }
+            function result(you,flip)
+            {
+                if(you === flip)
+                {
+                    document.querySelector('.op2').innerHTML = 'you won';
+                    wins += 1;
+                }
+                else if(you !== flip)
+                {
+                    document.querySelector('.op2').innerHTML = 'you lost';
+                    losses += 1;
+                }
+                return wins , losses;
+            }
+        </script>
+    </body>
+</html>

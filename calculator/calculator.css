@@ -1,0 +1,27 @@
+.bg{
+    background: linear-gradient(120deg , lightpink 0% , lightblue 100%);
+    color: white;
+    height: 300pxpx;
+    width: 300px;
+    border-radius: 8px;
+    
+}
+button{
+    height: 56px;
+    width: 56px;
+    border-radius: 28px;
+    background-color: rgb(234, 157, 170);
+    color: white;
+    font-size: 25px;
+    border: none;
+    margin: 8px 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px palevioletred;
+}
+button:active{
+    transform: translateY(1px);
+}
+.org{
+    background-color: rgb(131, 180, 208);
+    box-shadow: 0 2px 4px rgb(52, 140, 222);
+}

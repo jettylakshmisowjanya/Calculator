@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            hii
+        </title>
+    </head>
+    <body>
+        <input class="ip1" placeholder="hour">
+        <button onclick="
+        hour();">enter</button>
+        <div class="op1"></div>
+        <input placeholder="age" class="ip2">
+        <input class="holy" placeholder="1.holiday / 2.workingday">
+        <button onclick="
+        ag();">enter</button>
+        <div class="op2"></div>
+        <script>
+            const name = 'Sowjanya'
+            function hour(){
+                let hour = document.querySelector('.ip1').value;
+            if(hour >=13 && hour <17)
+            {
+                document.querySelector('.op1').innerHTML=`Good afternoon ${name}!`;
+            }
+            else if(hour <=12)
+            {
+                document.querySelector('.op1').innerHTML=`Good morning ${name}!`;
+            }
+            else{
+                document.querySelector('.op1').innerHTML=`Good night ${name}!`;
+            }
+            }
+
+            function ag(){
+                let age = document.querySelector('.ip2').value;
+                let holi = document.querySelector('.holy').value;
+                if((age <= 8 || age >= 65) && holi === '2')
+                {
+                    document.querySelector('.op2').innerHTML='discount';
+                }
+                else{
+                    document.querySelector('.op2').innerHTML='no discount';
+                }
+            }
+        </script>
+    </body>
+</html>

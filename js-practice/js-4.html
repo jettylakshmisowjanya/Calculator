@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>heehee</title>
+    </head>
+    <body>
+
+        <script>
+            let item1 = {
+                name : "basketball",
+                price : 2095
+            }
+            let item2 = {
+                name : 'football',
+                price : 5455
+            }
+            function compareprice(i1,i2){
+                if(JSON.stringify(i1) === JSON.stringify(i2))
+                {
+                    console.log(true);
+                    return true;
+                }
+                else{
+                    console.log(false);
+                    return false;
+                
+                }
+            }
+            let hi = 'VBG';
+            let hii = hi.toLowerCase();
+            console.log(hii);
+            let hiii = hii.toUpperCase();
+            hiii = hi.repeat(2);
+            console.log(hiii);
+            compareprice(item1,item2);
+        </script>
+    </body>
+</html>

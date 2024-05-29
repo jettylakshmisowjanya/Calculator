@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hii</title>
+        <style>
+            button{
+                padding: 5px 10px;
+                border-radius: 4px;
+            }
+            button.on{
+                background: black;
+                color: white;
+                padding: 5px 10px;
+                border-radius: 4px;
+            }
+        </style>
+    </head>
+    <body>
+        <button class="b" onclick="
+            toggle()">Gaming</button>
+       <script>
+        let p = document.querySelector('.b');
+        function toggle()
+        {
+            p.classList.toggle('on');
+        }
+       </script>
+    </body>
+</html>

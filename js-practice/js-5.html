@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>haahaa</title>
+    </head>
+    <body>
+        <input type="text" placeholder="name" class="inp" onkeyup="
+           ykey(event); ">
+           <p class="op"></p>
+           <button class="hii">test</button>               
+        <script>
+           function ykey(event)
+           {
+            if(event.key === 'Enter')
+            {
+                let ip = document.querySelector('.inp').value;
+                let op = document.querySelector('.op');
+                op.innerHTML += ip + '</br>';
+                document.querySelector('.inp').value = '';
+            }
+           }
+           let p = document.querySelector('.hii').classList.contains('hi');
+               console.log(p);
+        </script>
+     </body>
+</html>
